@@ -1,6 +1,6 @@
 build-job:
   tags:
-      - springboot-jpa-crudV1
+      - totV
   stage: build
   script:
     - mvn compile
