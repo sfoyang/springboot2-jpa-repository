@@ -1,6 +1,6 @@
 build-job:
   tags:
-      - pvTag
+      - povV1
   stage: build
   script:
     - mvn compile
