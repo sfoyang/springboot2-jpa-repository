@@ -5,7 +5,7 @@ build-job:
   script:
     - mvn compile
 
-test-job1:
+test-job:
   stage: test
   script:
     - mvn -Dtests=EmployeeTest test
