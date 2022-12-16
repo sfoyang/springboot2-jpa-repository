@@ -1,6 +1,6 @@
 build-job:
   tags:
-      - povV1
+      - springboot-jpa-crud-v1
   stage: build
   script:
     - mvn compile
