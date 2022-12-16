@@ -1,14 +1,14 @@
 build-job:
   tags:
       - test1
-  stage: build
+#  stage: build
   script:
     - mvn compile
 
-#test-job:
-#  stage: test
-#  script:
-#    - mvn -Dtests=EmployeeTest test
+test-job:
+  stage: test
+  script:
+    - mvn -Dtests=EmployeeTest test
 
 #test-job2:
 #  stage: test
