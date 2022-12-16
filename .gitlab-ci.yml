@@ -6,6 +6,8 @@ build-job:
     - mvn compile
 
 test-job:
+  tags:
+    - test1
   stage: test
   script:
     - mvn -Dtests=EmployeeTest test
