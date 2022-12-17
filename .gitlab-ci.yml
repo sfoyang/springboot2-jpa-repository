@@ -7,7 +7,7 @@
 
 test-job:
 #  image: maven:3.8-openjdk-11
-  image:  openjdk:11
+#  image:  openjdk:11
   tags:
     - test1
   stage: test
