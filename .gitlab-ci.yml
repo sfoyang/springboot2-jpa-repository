@@ -16,7 +16,8 @@ test-job:
 #    paths:
 #      - .m2/repository
   script:
-    - mvn -Dtests=EmployeeTest test
+#    - mvn -Dtests=EmployeeTest test
+    - mvn test
 
 #test-job2:
 #  stage: test
