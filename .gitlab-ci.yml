@@ -1,14 +1,20 @@
-build-job:
-  tags:
-      - test1
-#  stage: build
-  script:
-    - mvn compile
+#build-job:
+#  tags:
+#      - test1
+##  stage: build
+#  script:
+#    - mvn compile
 
 test-job:
+#  image: maven:3.8-openjdk-11
+  image:  openjdk:11
   tags:
     - test1
   stage: test
+#  cache:
+#    key: "maven-$CI_COMMIT_REF_SLUG"
+#    paths:
+#      - .m2/repository
   script:
     - mvn -Dtests=EmployeeTest test
 
