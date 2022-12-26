@@ -1,0 +1,13 @@
+version: '3'
+services:
+  backend:
+    container_name: app
+    image: app
+    restart: unless-stopped
+    env_file: .env
+    environment:
+#      - SPRING_PROFILES_ACTIVE=devtest
+      - DB_HOST=192.168.73.41:3306
+      - DB_NAME=users_database
+    depends_on:
+      - db
